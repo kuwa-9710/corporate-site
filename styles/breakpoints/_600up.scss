@@ -1,0 +1,80 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.font-sm {
+  font-size: 22px !important;
+}
+.font-md {
+  font-size: 25px !important;
+}
+.font-mr {
+  font-size: 43px !important;
+}
+.font-lr {
+  font-size: 30px !important;
+}
+.font-lg {
+  font-size: 70px !important;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  & #drawer_toggle {
+    display: none;
+    width: 30%;
+  }
+
+  & .logo {
+    position: relative;
+    padding: 5px;
+    
+  }
+
+  & #global_nav {
+    display: inline-block;
+    background-color: transparent;
+    padding-top: 0;
+    position: relative;
+    width: 60%;
+    & ul {
+      display: flex;
+      justify-content: end;
+      padding-top: 18px;
+      & li {
+        
+        border-bottom: none;
+        margin-right: 30px;
+        &:first-child {
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
+#title {
+  & .big_title {
+    padding-top: 40%;
+  }
+}
+
+.thumbnail {
+  height: 500px;
+  & img {
+    width: 550px;
+  }
+}
